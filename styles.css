@@ -1,0 +1,263 @@
+:root {
+  --primary: #1E1E2F;
+  --accent: #E04A4A;
+  --text: #FFFFFF;
+  --secondary: #373A4;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--primary);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: var(--secondary);
+  padding: 0rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  font-size: 2.5rem;
+}
+
+.login-container label {
+  display: block;
+  padding-bottom: 0.6rem; 
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #2C2C3E;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding: 0.75rem;
+  padding-right: 44px; 
+  border: none;
+  border-radius: 8px;
+  background-color: #2C2C3E;
+  color: var(--text);
+  font-size: 1rem;
+  height: 44px; 
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  bottom: 29px;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Reset z-index for body before/after */
+body::before,
+body::after {
+  content: none; /* Remove previous circles */
+}
+
+/* Container must be relative for layering */
+.login-container {
+  position: relative;
+  z-index: 10;
+}
+
+/* Background wrapper for squares */
+.background-squares {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Single glowing square base style */
+.background-squares .square {
+  position: absolute;
+  border-radius: 6px;
+  box-shadow: 0 0 15px 5px;
+  opacity: 0.15;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Different squares with sizes, colors, positions, and animations */
+
+.background-squares .square1 {
+  width: 40px;
+  height: 40px;
+  background-color: var(--accent);
+  box-shadow: 0 0 20px 8px var(--accent);
+  top: 10%;
+  left: 15%;
+  animation-name: pulseMove1;
+  animation-duration: 6s;
+}
+
+.background-squares .square2 {
+  width: 25px;
+  height: 25px;
+  background-color: var(--text);
+  box-shadow: 0 0 18px 6px var(--text);
+  top: 60%;
+  left: 15%;
+  animation-name: pulseMove2;
+  animation-duration: 8s;
+}
+
+.background-squares .square3 {
+  width: 30px;
+  height: 30px;
+  background-color: var(--accent);
+  box-shadow: 0 0 22px 7px var(--accent);
+  top: 80%;
+  left: 70%;
+  animation-name: pulseMove3;
+  animation-duration: 7s;
+}
+
+.background-squares .square4 {
+  width: 35px;
+  height: 35px;
+  background-color: var(--text);
+  box-shadow: 0 0 20px 6px var(--text);
+  top: 20%;
+  left: 75%;
+  animation-name: pulseMove4;
+  animation-duration: 5s;
+}
+
+/* Keyframe animations for gentle floating + pulsing */
+
+@keyframes pulseMove1 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translate(15px, -10px) scale(1.1);
+    opacity: 0.25;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+}
+
+@keyframes pulseMove2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translate(-10px, 10px) scale(1.15);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+}
+
+@keyframes pulseMove3 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translate(20px, 5px) scale(1.1);
+    opacity: 0.28;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+}
+
+@keyframes pulseMove4 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translate(-15px, -15px) scale(1.12);
+    opacity: 0.27;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+}
+
+
+.login-container button {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+  padding: 0.90rem;
+  background-color: var(--accent);
+  color: var(--text);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #C84040;
+}
+
+.login-container .alt, .forgot-password {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.login-container .alt a, .forgot-password a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+
+.login-container .alt a:hover {
+  text-decoration: underline;
+}
