@@ -281,7 +281,7 @@ body {
 .certificates,
 .set-goal,
 .streak-stats {
-  border: 7px ridge black;
+  border: 5px ridge black;
 }
 
 @media (min-width: 1120px) and (max-width: 1630px) {
