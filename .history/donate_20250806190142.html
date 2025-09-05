@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support Free Coding Education | Codemate</title>
+  <link rel="stylesheet" href="donate-styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    
+
+    <header class="header">
+    
+    <div class="landing-page-container-codemate-logo">
+      <a href="home-page.html" class="logo-link">
+        <img src="https://raw.githubusercontent.com/Duskofnight/codemate-assets/refs/heads/main/codemate-nologo-transparent-red.png" class="landing-page-codemate-logo" alt="Codemate Logo">
+        <h2>codemate</h2>
+      </a>  
+    </div>
+
+    <nav class="navbar">
+      <a href="courses-page.html" class="nav-link">Courses</a>
+      <a href="community.html" class="nav-link">Community</a>
+      <a href="blogs-page.html" class="nav-link">Blogs</a>
+      <a href="code-compilers.html" class="nav-link">Code Compilers</a>
+      <a href="donate.html" class="nav-link">Donate</a>
+    </nav>
+   
+    <div class="header-profile">
+        <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg" class="header-profile-pic" id="header-profile-pic">
+        <div class="dropdown" id="dropdownMenu">
+      
+        <a href="#"><i class="fas fa-user"></i>Profile</a>
+        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+        <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+        <a onclick="logout()"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+      </div>
+    </div>
+    
+    <div class="topnav">
+      <div id="myLinks">
+        <a href="courses-page.html" class="nav-link"><h4>Courses</h4></a>
+        <a href="community.html" class="nav-link"><h4>Community</h4></a>
+        <a href="blogs-page.html" class="nav-link"><h4>Blogs</h4></a>
+        <a href="code-compilers" class="nav-link"><h4>Code Compilers</h4></a>
+        <a href="account" class="nav-link"><h4>Account</h4></a>
+      </div>
+      <div class="menu-icon" onclick="myFunction()">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+      </div>
+    </div>
+    
+  </header>
+
+
+  <div class="main-content">
+
+
+
+  <div class="donate-header">
+      <h1 class="donate-heading">Support Free Coding Education</h1>
+      <p class="donate-subtitle">When you contribute to Codemate, you're helping make coding education free for learners everywhere.</p>
+  </div>
+
+
+
+  
+  <h2 class="benefits-heading">Exclusive Contributor Benefits</h2>
+  <section class="benefits">
+    <ul class="contributor-benefits">
+    <li>Official digital certificate of recognition</li>
+    <li>Stand out with a golden username </li>
+    <li>Exclusive Contributor badge next to your username</li>
+    <li>Unlock an exclusive Contributor frame for your profile picture </li>
+    <li>Make an impact within the coding community as a Contributor</li>
+  </ul>
+  </section>
+
+   <h2 class="impact-heading">The Impact of Donating</h2>
+  <section class="impact">
+   <p class="impact-subtitle">By donating, you are directly powering Codemate's purpose of keeping quality coding education accessible to everyone for free. Every contribution that you make helps us expand our course library, continuously improve our platform features, and keep Codemate free for everyone. </p><p class="impact-subtitle"><br>When you donate, you're not just supporting the platform — you're also investing in the dreams of aspiring programmers across the world have access to free coding material and building a global community where anyone can learn to code, regardless of their background or financial situation. </p>
+  </section>
+  
+        
+
+      <section class="donation-section">
+        <h2 class="section-heading" style="color: var(--text-primary); margin-bottom: 2rem;">Make Your Contribution</h2>
+        <p class="donation-subtitle" id="donationSubtitle">Choose a monthly amount: </p>
+        
+        <div class="donation-amounts">
+          <button class="amount-btn" onclick="selectAmount(5)">$5</button>
+          <button class="amount-btn" onclick="selectAmount(10)">$10</button>
+          <button class="amount-btn" onclick="selectAmount(25)" prese>$25</button>
+          <button class="amount-btn" onclick="selectAmount(50)">$50</button>
+          <button class="amount-btn" onclick="selectAmount(100)">$100</button>
+        </div>
+
+       
+
+        <button class="donate-btn" onclick="processDonation()" disabled>
+          <i class="fas fa-heart"></i> Donate Now
+        </button>
+
+        <div id="donationMessage" class="donation-message" style="display: none;"></div>
+
+
+        <div class="faq-section">
+          <h3 class="section-heading" style="color: var(--text-primary); font-size: 1.8rem;">Common Questions</h3>
+          <div class="faq-grid">
+            <div class="faq-item">
+              <div class="faq-question">
+                <i class="fas fa-shield-alt"></i>
+                Is my donation secure?
+              </div>
+              <div class="faq-answer">Yes, we use industry-standard encryption and secure payment processors to protect your information.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <i class="fas fa-receipt"></i>
+                Will I receive a receipt?
+              </div>
+              <div class="faq-answer">Absolutely! You'll receive an email receipt immediately after your donation is processed.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <i class="fas fa-sync"></i>
+                Can I set up recurring donations?
+              </div>
+              <div class="faq-answer">Yes, you can choose to make your contribution monthly or yearly during checkout.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <i class="fas fa-chart-line"></i>
+                How will my money be used?
+              </div>
+              <div class="faq-answer">Funds go directly to platform development, course creation, and maintaining free access for all users.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <i class="fas fa-undo"></i>
+                What's your refund policy?
+              </div>
+              <div class="faq-answer">We offer full refunds within 30 days of donation if you're not completely satisfied.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <i class="fas fa-globe"></i>
+                Do you accept international donations?
+              </div>
+              <div class="faq-answer">Yes! We accept donations from supporters worldwide in multiple currencies.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <script src="donate-script.js"></script>
+  </body>
+
+  </html>

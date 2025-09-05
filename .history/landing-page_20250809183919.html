@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codemate: Unlock your Coding Potential for Free
+</title>
+  <link rel="stylesheet" href="landing-page-styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="background-squares">
+    <div class="square square1"></div>
+    <div class="square square2"></div>
+    <div class="square square3"></div>
+    <div class="square square4"></div>
+  </div>
+
+  <header class="header">
+    
+    <div class="landing-page-container-codemate-logo">
+      <a href="landing-page.html" class="logo-link">
+        <img src="https://raw.githubusercontent.com/Duskofnight/codemate-assets/refs/heads/main/codemate-nologo-transparent-red.png" class="landing-page-codemate-logo" alt="Codemate Logo">
+        <h2>codemate</h2>
+      </a>  
+    </div>
+
+    <nav class="navbar">
+      <a href="#course-section" class="nav-link">Courses</a>
+      <a href="#community-section" class="nav-link">Community</a>
+      <a href="#blogs" class="nav-link">Blogs</a>
+      <a href="#code-compilers" class="nav-link">Code Compilers</a>
+      <a href="#donate" class="nav-link">Donate</a>
+    </nav>
+    
+    <div class="buttons">
+      <a href="login-page.html">
+        <button class="login-button">Log in</button>
+      </a>
+      <a href="signup-page.html">
+        <button class="signup-button">Sign up</button>
+      </a>
+    </div>
+    
+    <div class="topnav">
+      <div id="myLinks">
+        <a href="#course-section"><h4>Courses</h4></a>
+        <a href="#community-section"><h4>Community</h4></a>
+        <a href="#blogs"><h4>Blogs</h4></a>
+        <a href="#code-compilers" class="nav-link"><h4>Code Compilers</h4></a>
+
+      <div class="topnav-buttons">
+        <a href="login-page.html">
+          <button class="login-button">Log in</button>
+        </a>
+        <a href="signup-page.html">
+          <button class="signup-button">Sign up</button>
+        </a>
+      </div>
+
+      </div>
+      <div class="menu-icon" onclick="myFunction()">
+        
+          <span class="bar1"></span>
+  <span class="bar2"></span>
+  <span class="bar3"></span>
+      </div>
+    </div>
+    
+  </header>
+
+
+  
+
+<section class="hero">
+  <div class="hero-code-left">
+  <div class="hero-full-text">
+  <h1 class="hero-message">Unlock your coding potential.<br>No costs, No catch.</h1>
+  <p class="hero-sub-message">Explore interactive courses, real-world projects, and beginner-friendly content that help you code faster and smarter - all for free, seriously.</p>
+  </div>
+
+<div class="signup-container">
+
+  <p class= "signup-message">Begin Your Journey</p>
+
+
+
+  <a href="http://localhost:3000/auth/google" class="google-button" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0, 0, 0, 0.1)'">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+      <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+      <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+      <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+      <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+    </svg>
+    Sign In With Google
+  </a>
+
+
+
+  <p class="divider">OR</p>
+  
+    <a href="signup-page.html">
+        <button>See more options</button>
+    </a>
+</div>
+</div>
+
+<div class="hero-code-snippet" id="code-block-container">
+    <div class="code-window">
+      <div class="code-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+
+      <div class="language-indicator">.py</div>
+
+      <pre><code id="typing-code" class="language-jsx"></code></pre>
+    </div>
+</div>
+  
+
+</section>
+
+<section class="courses-section">
+
+  <div class="courses-full-text">
+    <h2 class="courses-message">Choose Your Learning Path.</h2>
+    <p class="courses-sub-message">Discover some of our most popular courses and find the perfect starting point for your coding journey.</p>
+  </div>
+
+  <section class="courses">
+
+  <a class="python-intro" href="/courses/html-introduction.html" id="course-link">
+        <h3>PROGRAM</h3>
+        <h2>Introduction to Python</h2>
+        <h3>Start by learning the basics of Python, one of the most popular and beginner-friendly programming languages</h3>
+        <div class="beginner-level">
+          <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <path d="M1.33301 9.99967C1.33301 9.63148 1.63148 9.33301 1.99967 9.33301H4.66634C5.03453 9.33301 5.33301 9.63148 5.33301 9.99967V11.9997C5.33301 12.3679 5.03453 12.6663 4.66634 12.6663H1.99967C1.63148 12.6663 1.33301 12.3679 1.33301 11.9997V9.99967Z" fill="currentColor"></path>
+     <rect x="6" y="6.00012" width="4" height="6.66667" rx="0.666667" fill="currentColor" fill-opacity="0.3"></rect>
+      <path d="M10.666 3.33366C10.666 2.96547 10.9645 2.66699 11.3327 2.66699H13.9993C14.3675 2.66699 14.666 2.96547 14.666 3.33366V12.0003C14.666 12.3685 14.3675 12.667 13.9993 12.667H11.3327C10.9645 12.667 10.666 12.3685 10.666 12.0003V3.33366Z" fill="currentColor" fill-opacity="0.3"></path>
+</svg>           
+          <span>Beginner Course</span>
+        </div>        
+        
+    </a>
+
+    <a class="html-intro" href="landing-page.html" id="course-link">
+        <h3>PROGRAM</h3>
+        <h2>Introduction to HTML</h2>
+        <h3>Learn the basics of front-end programming and web development through our HTML course</h3>
+        <div class="beginner-level">
+          <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <path d="M1.33301 9.99967C1.33301 9.63148 1.63148 9.33301 1.99967 9.33301H4.66634C5.03453 9.33301 5.33301 9.63148 5.33301 9.99967V11.9997C5.33301 12.3679 5.03453 12.6663 4.66634 12.6663H1.99967C1.63148 12.6663 1.33301 12.3679 1.33301 11.9997V9.99967Z" fill="currentColor"></path>
+     <rect x="6" y="6.00012" width="4" height="6.66667" rx="0.666667" fill="currentColor" fill-opacity="0.3"></rect>
+      <path d="M10.666 3.33366C10.666 2.96547 10.9645 2.66699 11.3327 2.66699H13.9993C14.3675 2.66699 14.666 2.96547 14.666 3.33366V12.0003C14.666 12.3685 14.3675 12.667 13.9993 12.667H11.3327C10.9645 12.667 10.666 12.3685 10.666 12.0003V3.33366Z" fill="currentColor" fill-opacity="0.3"></path>
+</svg>        
+          <span>Beginner Course</span>
+        </div>    
+      
+    </a>
+
+    <a class="css-intro" href="landing-page.html" id="course-link">
+        <h3>PROGRAM</h3>
+        <h2>Introduction to CSS</h2>
+        <h3>Control the styling and layout of your web pages through CSS, bringing your design ideas into life  </h3>
+        <div class="beginner-level">
+          <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <path d="M1.33301 9.99967C1.33301 9.63148 1.63148 9.33301 1.99967 9.33301H4.66634C5.03453 9.33301 5.33301 9.63148 5.33301 9.99967V11.9997C5.33301 12.3679 5.03453 12.6663 4.66634 12.6663H1.99967C1.63148 12.6663 1.33301 12.3679 1.33301 11.9997V9.99967Z" fill="currentColor"></path>
+     <rect x="6" y="6.00012" width="4" height="6.66667" rx="0.666667" fill="currentColor" fill-opacity="0.3"></rect>
+      <path d="M10.666 3.33366C10.666 2.96547 10.9645 2.66699 11.3327 2.66699H13.9993C14.3675 2.66699 14.666 2.96547 14.666 3.33366V12.0003C14.666 12.3685 14.3675 12.667 13.9993 12.667H11.3327C10.9645 12.667 10.666 12.3685 10.666 12.0003V3.33366Z" fill="currentColor" fill-opacity="0.3"></path>
+</svg>         
+          <span>Beginner Course</span>
+        </div>    
+      
+      </a>
+
+    <a class="js-intro" href="landing-page.html" id="course-link">
+        <h3>PROGRAM</h3>
+        <h2>Introduction to JavaScript</h2>
+        <h3>Learn the basics of the world's most popular programming language by making your web pages interactive</h3>
+        <div class="beginner-level">
+          <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <path d="M1.33301 9.99967C1.33301 9.63148 1.63148 9.33301 1.99967 9.33301H4.66634C5.03453 9.33301 5.33301 9.63148 5.33301 9.99967V11.9997C5.33301 12.3679 5.03453 12.6663 4.66634 12.6663H1.99967C1.63148 12.6663 1.33301 12.3679 1.33301 11.9997V9.99967Z" fill="currentColor"></path>
+     <rect x="6" y="6.00012" width="4" height="6.66667" rx="0.666667" fill="currentColor" fill-opacity="0.3"></rect>
+      <path d="M10.666 3.33366C10.666 2.96547 10.9645 2.66699 11.3327 2.66699H13.9993C14.3675 2.66699 14.666 2.96547 14.666 3.33366V12.0003C14.666 12.3685 14.3675 12.667 13.9993 12.667H11.3327C10.9645 12.667 10.666 12.3685 10.666 12.0003V3.33366Z" fill="currentColor" fill-opacity="0.3"></path>
+</svg>           
+          <span>Beginner Course</span>
+        </div>    
+      </a>
+
+    <a class="c-plus-plus-intro" href="landing-page.html" id="course-link">
+        <h3>PROGRAM</h3>
+        <h2>Introduction to C++</h2>
+        <h3>C++ is a popular language for back-end programming, excellent for creating games, operating systems, and more </h3>
+        <div class="beginner-level">
+          <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <path d="M1.33301 9.99967C1.33301 9.63148 1.63148 9.33301 1.99967 9.33301H4.66634C5.03453 9.33301 5.33301 9.63148 5.33301 9.99967V11.9997C5.33301 12.3679 5.03453 12.6663 4.66634 12.6663H1.99967C1.63148 12.6663 1.33301 12.3679 1.33301 11.9997V9.99967Z" fill="currentColor"></path>
+     <rect x="6" y="6.00012" width="4" height="6.66667" rx="0.666667" fill="currentColor" fill-opacity="0.3"></rect>
+      <path d="M10.666 3.33366C10.666 2.96547 10.9645 2.66699 11.3327 2.66699H13.9993C14.3675 2.66699 14.666 2.96547 14.666 3.33366V12.0003C14.666 12.3685 14.3675 12.667 13.9993 12.667H11.3327C10.9645 12.667 10.666 12.3685 10.666 12.0003V3.33366Z" fill="currentColor" fill-opacity="0.3"></path>
+</svg>          
+          <span>Beginner Course</span>
+        </div>    
+      </a>
+
+    <a class="sql-intro" href="landing-page.html" id="course-link">
+        <h3>PROGRAM</h3>
+        <h2>Introduction to SQL</h2>
+        <h3>Organize and manage data through our SQL course, while learning how to communicate with databases</h3>
+        <div class="beginner-level">
+          <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <path d="M1.33301 9.99967C1.33301 9.63148 1.63148 9.33301 1.99967 9.33301H4.66634C5.03453 9.33301 5.33301 9.63148 5.33301 9.99967V11.9997C5.33301 12.3679 5.03453 12.6663 4.66634 12.6663H1.99967C1.63148 12.6663 1.33301 12.3679 1.33301 11.9997V9.99967Z" fill="currentColor"></path>
+     <rect x="6" y="6.00012" width="4" height="6.66667" rx="0.666667" fill="currentColor" fill-opacity="0.3"></rect>
+      <path d="M10.666 3.33366C10.666 2.96547 10.9645 2.66699 11.3327 2.66699H13.9993C14.3675 2.66699 14.666 2.96547 14.666 3.33366V12.0003C14.666 12.3685 14.3675 12.667 13.9993 12.667H11.3327C10.9645 12.667 10.666 12.3685 10.666 12.0003V3.33366Z" fill="currentColor" fill-opacity="0.3"></path>
+</svg> 
+          <span>Beginner Course</span>
+        </div>    
+      </a>
+
+
+    <a class="python-advanced" href="landing-page.html" id="course-link">
+        <h3>PROGRAM</h3>
+        <h2>Python Advanced</h2>
+        <h3>Strengthen your skills in Python by diving into decorators, object-oriented-programming, and more</h3>
+        <div class="advanced-level">
+          <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.33301 9.99967C1.33301 9.63148 1.63148 9.33301 1.99967 9.33301H4.66634C5.03453 9.33301 5.33301 9.63148 5.33301 9.99967V11.9997C5.33301 12.3679 5.03453 12.6663 4.66634 12.6663H1.99967C1.63148 12.6663 1.33301 12.3679 1.33301 11.9997V9.99967Z" fill="currentColor"></path>
+  <rect x="6" y="6.00012" width="4" height="6.66667" rx="0.666667" fill="currentColor"></rect>
+  <path d="M10.666 3.33366C10.666 2.96547 10.9645 2.66699 11.3327 2.66699H13.9993C14.3675 2.66699 14.666 2.96547 14.666 3.33366V12.0003C14.666 12.3685 14.3675 12.667 13.9993 12.667H11.3327C10.9645 12.667 10.666 12.3685 10.666 12.0003V3.33366Z" fill="currentColor" fill-opacity="0.3"></path>
+</svg>
+          <span>Advanced Course</span>
+        </div>    
+      </a>
+
+    <a class="html-advanced" href="landing-page.html" id="course-link">
+        <h3>PROGRAM</h3>
+        <h2>HTML Advanced</h2>
+        <h3>Further explore HTML by expanding on topics that help build more responsive and flexible web pages</h3>
+        <div class="advanced-level">
+          <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.33301 9.99967C1.33301 9.63148 1.63148 9.33301 1.99967 9.33301H4.66634C5.03453 9.33301 5.33301 9.63148 5.33301 9.99967V11.9997C5.33301 12.3679 5.03453 12.6663 4.66634 12.6663H1.99967C1.63148 12.6663 1.33301 12.3679 1.33301 11.9997V9.99967Z" fill="currentColor"></path>
+  <rect x="6" y="6.00012" width="4" height="6.66667" rx="0.666667" fill="currentColor"></rect>
+  <path d="M10.666 3.33366C10.666 2.96547 10.9645 2.66699 11.3327 2.66699H13.9993C14.3675 2.66699 14.666 2.96547 14.666 3.33366V12.0003C14.666 12.3685 14.3675 12.667 13.9993 12.667H11.3327C10.9645 12.667 10.666 12.3685 10.666 12.0003V3.33366Z" fill="currentColor" fill-opacity="0.3"></path>
+</svg>
+          <span>Advanced Course</span>
+        </div>        
+      </a>
+
+    <a class="css-advanced" href="landing-page.html" id="course-link">
+        <h3>PROGRAM</h3>
+        <h2>CSS Advanced</h2>
+        <h3>Take your design into the next level by exploring more efficient layouts and create more responsive web designs</h3>
+        <div class="advanced-level">
+          <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.33301 9.99967C1.33301 9.63148 1.63148 9.33301 1.99967 9.33301H4.66634C5.03453 9.33301 5.33301 9.63148 5.33301 9.99967V11.9997C5.33301 12.3679 5.03453 12.6663 4.66634 12.6663H1.99967C1.63148 12.6663 1.33301 12.3679 1.33301 11.9997V9.99967Z" fill="currentColor"></path>
+  <rect x="6" y="6.00012" width="4" height="6.66667" rx="0.666667" fill="currentColor"></rect>
+  <path d="M10.666 3.33366C10.666 2.96547 10.9645 2.66699 11.3327 2.66699H13.9993C14.3675 2.66699 14.666 2.96547 14.666 3.33366V12.0003C14.666 12.3685 14.3675 12.667 13.9993 12.667H11.3327C10.9645 12.667 10.666 12.3685 10.666 12.0003V3.33366Z" fill="currentColor" fill-opacity="0.3"></path>
+</svg>
+          <span>Advanced Course</span>
+        </div>    
+      </a>
+
+    <a class="js-advanced" href="landing-page.html" id="course-link">
+        <h3>PROGRAM</h3>
+        <h2>JavaScript Advanced</h2>
+        <h3>Expand your understanding in JavaScript by exploring more complex topics in creating interactive websites</h3>
+        <div class="advanced-level">
+          <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.33301 9.99967C1.33301 9.63148 1.63148 9.33301 1.99967 9.33301H4.66634C5.03453 9.33301 5.33301 9.63148 5.33301 9.99967V11.9997C5.33301 12.3679 5.03453 12.6663 4.66634 12.6663H1.99967C1.63148 12.6663 1.33301 12.3679 1.33301 11.9997V9.99967Z" fill="currentColor"></path>
+  <rect x="6" y="6.00012" width="4" height="6.66667" rx="0.666667" fill="currentColor"></rect>
+  <path d="M10.666 3.33366C10.666 2.96547 10.9645 2.66699 11.3327 2.66699H13.9993C14.3675 2.66699 14.666 2.96547 14.666 3.33366V12.0003C14.666 12.3685 14.3675 12.667 13.9993 12.667H11.3327C10.9645 12.667 10.666 12.3685 10.666 12.0003V3.33366Z" fill="currentColor" fill-opacity="0.3"></path>
+</svg>
+          <span>Advanced Course</span>
+        </div>    
+      </a>
+
+    <a class="c++-advanced" href="landing-page.html" id="course-link">
+        <h3>PROGRAM</h3>
+        <h2>C++ Advanced</h2>
+        <h3>Strengthen your skills in C++ by diving into skills to create more advanced back-end programs</h3>
+        <div class="advanced-level">
+          <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.33301 9.99967C1.33301 9.63148 1.63148 9.33301 1.99967 9.33301H4.66634C5.03453 9.33301 5.33301 9.63148 5.33301 9.99967V11.9997C5.33301 12.3679 5.03453 12.6663 4.66634 12.6663H1.99967C1.63148 12.6663 1.33301 12.3679 1.33301 11.9997V9.99967Z" fill="currentColor"></path>
+  <rect x="6" y="6.00012" width="4" height="6.66667" rx="0.666667" fill="currentColor"></rect>
+  <path d="M10.666 3.33366C10.666 2.96547 10.9645 2.66699 11.3327 2.66699H13.9993C14.3675 2.66699 14.666 2.96547 14.666 3.33366V12.0003C14.666 12.3685 14.3675 12.667 13.9993 12.667H11.3327C10.9645 12.667 10.666 12.3685 10.666 12.0003V3.33366Z" fill="currentColor" fill-opacity="0.3"></path>
+</svg>
+          <span>Advanced Course</span>
+        </div>    
+      </a>
+
+    <a class="sql-advanced" href="landing-page.html" id="course-link">
+        <h3>PROGRAM</h3>
+        <h2>SQL Advanced</h2>
+        <h3>Further explore the concepts of SQL by managing larger and more complex data structures</h3>
+        <div class="advanced-level">
+          <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.33301 9.99967C1.33301 9.63148 1.63148 9.33301 1.99967 9.33301H4.66634C5.03453 9.33301 5.33301 9.63148 5.33301 9.99967V11.9997C5.33301 12.3679 5.03453 12.6663 4.66634 12.6663H1.99967C1.63148 12.6663 1.33301 12.3679 1.33301 11.9997V9.99967Z" fill="currentColor"></path>
+  <rect x="6" y="6.00012" width="4" height="6.66667" rx="0.666667" fill="currentColor"></rect>
+  <path d="M10.666 3.33366C10.666 2.96547 10.9645 2.66699 11.3327 2.66699H13.9993C14.3675 2.66699 14.666 2.96547 14.666 3.33366V12.0003C14.666 12.3685 14.3675 12.667 13.9993 12.667H11.3327C10.9645 12.667 10.666 12.3685 10.666 12.0003V3.33366Z" fill="currentColor" fill-opacity="0.3"></path>
+</svg>
+          <span>Advanced Course</span>
+        </div>
+      </a>
+
+       <a class="llm-intro" href="landing-page.html" id="course-link">
+        <h3>LEARN</h3>
+        <h2>Introduction to LLMs</h2>
+        <h3>Explore the concepts of Large Language Models (LLMs) and gather an understanding of how they are applied in the AI industry </h3>
+        <div class="beginner-level">
+          <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <path d="M1.33301 9.99967C1.33301 9.63148 1.63148 9.33301 1.99967 9.33301H4.66634C5.03453 9.33301 5.33301 9.63148 5.33301 9.99967V11.9997C5.33301 12.3679 5.03453 12.6663 4.66634 12.6663H1.99967C1.63148 12.6663 1.33301 12.3679 1.33301 11.9997V9.99967Z" fill="currentColor"></path>
+     <rect x="6" y="6.00012" width="4" height="6.66667" rx="0.666667" fill="currentColor" fill-opacity="0.3"></rect>
+      <path d="M10.666 3.33366C10.666 2.96547 10.9645 2.66699 11.3327 2.66699H13.9993C14.3675 2.66699 14.666 2.96547 14.666 3.33366V12.0003C14.666 12.3685 14.3675 12.667 13.9993 12.667H11.3327C10.9645 12.667 10.666 12.3685 10.666 12.0003V3.33366Z" fill="currentColor" fill-opacity="0.3"></path>
+</svg> 
+          <span>Beginner Course</span>
+        </div>
+      </a>
+
+    <a class="ml-intro" href="landing-page.html" id="course-link">
+        <h3>LEARN</h3>
+        <h2>Introduction to ML</h2>
+        <h3>Learn the basics of Machine Learning (ML) and understand how this is used to train and test different AI models</h3>
+        <div class="beginner-level">
+          <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <path d="M1.33301 9.99967C1.33301 9.63148 1.63148 9.33301 1.99967 9.33301H4.66634C5.03453 9.33301 5.33301 9.63148 5.33301 9.99967V11.9997C5.33301 12.3679 5.03453 12.6663 4.66634 12.6663H1.99967C1.63148 12.6663 1.33301 12.3679 1.33301 11.9997V9.99967Z" fill="currentColor"></path>
+     <rect x="6" y="6.00012" width="4" height="6.66667" rx="0.666667" fill="currentColor" fill-opacity="0.3"></rect>
+      <path d="M10.666 3.33366C10.666 2.96547 10.9645 2.66699 11.3327 2.66699H13.9993C14.3675 2.66699 14.666 2.96547 14.666 3.33366V12.0003C14.666 12.3685 14.3675 12.667 13.9993 12.667H11.3327C10.9645 12.667 10.666 12.3685 10.666 12.0003V3.33366Z" fill="currentColor" fill-opacity="0.3"></path>
+</svg> 
+          <span>Beginner Course</span>
+        </div>
+      </a>
+
+    <a class="seo-intro" href="landing-page.html" id="course-link">
+        <h3>LEARN</h3>
+        <h2>SEO with AI</h2>
+        <h3>Explore how AI can be leveraged to create different strategies and content that help increase your website's traffic </h3>
+        <div class="beginner-level">
+          <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <path d="M1.33301 9.99967C1.33301 9.63148 1.63148 9.33301 1.99967 9.33301H4.66634C5.03453 9.33301 5.33301 9.63148 5.33301 9.99967V11.9997C5.33301 12.3679 5.03453 12.6663 4.66634 12.6663H1.99967C1.63148 12.6663 1.33301 12.3679 1.33301 11.9997V9.99967Z" fill="currentColor"></path>
+     <rect x="6" y="6.00012" width="4" height="6.66667" rx="0.666667" fill="currentColor" fill-opacity="0.3"></rect>
+      <path d="M10.666 3.33366C10.666 2.96547 10.9645 2.66699 11.3327 2.66699H13.9993C14.3675 2.66699 14.666 2.96547 14.666 3.33366V12.0003C14.666 12.3685 14.3675 12.667 13.9993 12.667H11.3327C10.9645 12.667 10.666 12.3685 10.666 12.0003V3.33366Z" fill="currentColor" fill-opacity="0.3"></path>
+</svg> 
+          <span>Beginner Course</span>
+        </div>
+      </a>
+  </section>
+
+</section>
+
+<section class="about-section">
+
+  <div class="about-full-text">
+    <h2 class="about-message">The Perfect Place to Program For Free.</h2>
+  </div>
+
+  
+
+
+
+
+
+  <section class="about-boxes">
+
+    <div class="about-box">
+      <div class="about-icon">💡</div>
+      <h3>Learn by doing</h3>
+      <p>Codemate uses AI to generate hands-on projects and problems that reflect real-world coding. Just meaningful practice, made smarter.</p>
+    </div>
+
+    <div class="about-box">
+      <div class="about-icon">🎯</div>
+      <h3>Learn your way</h3>
+      <p>Your pace. Your path. Codemate adapts to your schedule and skill level — whether you're coding before class, after work, or just on weekends.</p>
+    </div>
+
+    <div class="about-box">
+      <div class="about-icon">🏆</div>
+      <h3>Certificates and Achievements</h3>
+      <p>Earn verified certificates, track your progress, and progress through your coding journey with real, hands-on skills.</p>
+    </div>
+
+    <div class="about-box">
+      <div class="about-icon">❤️</div>
+      <h3>Completely Free</h3>
+      <p>And the best part? No hidden fees. Just full access, funded entirely through heartfelt monthly contributions from our dedicated community</p>
+    </div>
+
+    </section>
+
+
+    <div class="cta-section">
+    <h3 class="cta-title">Ready to Start Your Coding Journey?</h3>
+    <p class="cta-description">Join thousands of learners who are transforming their careers with practical, hands-on coding skills.</p>
+    <a href="#" class="cta-button pulse">Start Learning Free</a>
+</div>
+
+</section>
+
+
+<footer>
+  <section class="introduction-courses">
+    <h3>Introduction Courses</h3>
+  </section>
+
+  <section class="advanced-courses">
+    <h3>Advanced Courses</h3>
+  </section>
+
+  <h3>Connect </h3>
+
+  <h3>Useful</h3>
+</footer>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-jsx.min.js"></script>
+  
+  <script src="landing-page-script.js"></script>
+
+</body>
+</html>

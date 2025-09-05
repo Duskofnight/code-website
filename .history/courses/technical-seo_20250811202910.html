@@ -1,0 +1,266 @@
+ <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical SEO</title>
+    <link rel="stylesheet" href="lessons-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+        <div class="escape">
+          
+          <a href="intro-to-seo.html" class="escape-link">
+            <svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 24 24" fill="none" class="h-6"><path fill="currentColor" d="m20.28 4.78-1.06-1.06L12 10.94 4.78 3.72 3.72 4.78 10.94 12l-7.22 7.22 1.06 1.06L12 13.06l7.22 7.22 1.06-1.06L13.06 12l7.22-7.22Z"></path></svg>
+            
+          </a>
+          <h3>Technical SEO</h3>
+        </div>
+        <div class="header">
+        <svg class="previous" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" onclick="previousSlide()" style="cursor: pointer;">
+          <path d="M20 8L12 16L20 24" stroke="black" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="progress-container">        
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+
+        <div id="app">
+        
+          
+        <div id="one" class="page active">
+          <div class="main">
+            <h3 class="subtitle">Welcome Back!</h3>
+            <p class="caption">Last lesson, you learned about optimizing your website's content and HTML (titles, headings, images, meta).<br><br>In this lesson, you will learn about the <strong>technical</strong> aspects of SEO that help search engines crawl and index your site effectively. Let's dive in!</p>
+              
+          </div>
+          
+         
+            <p class="continue" onclick="nextSlide()">Next</p>
+            
+        </div>
+
+      
+        <div id="two" class="page">
+          <div class="main">
+            <div class="caption">         
+              <h2 class="subtitle">What is Technical SEO?</h2>
+                <p>
+                It’s about the backend and structure of your site that affect <strong>crawling</strong> and <strong>indexing</strong>. <br><br>Think of it as making sure your site’s “foundation” is solid.
+                </p>
+            </div>  
+          </div>                                                
+          
+      
+            <p class="continue" onclick="nextSlide()">Next</p>
+            
+
+        </div>
+
+        
+        <div id="three" class="page">
+          <div class="main">
+            <h3 class="subtitle">Site Architecture</h3>
+            <p class="caption">
+              Create a logical structure and use an <strong>XML sitemap</strong>. <br><br>A <strong>sitemap</strong> is like a roadmap for search engines, listing your important pages so Google can find them all. <br><br>Also use a <code class="title-text-tag">robots.txt</code> file to manage crawler access (e.g. allow or block certain pages).
+          </p>
+          </div>
+          
+           
+            <p class="continue" onclick="nextSlide()">Next</p>
+            
+        </div>
+
+        <div id="four" class="page">
+          <div class="main">
+            <h3 class="subtitle">Page Speed (Core Web Vitals)</h3>
+            <p class="caption">
+              Fast-loading pages are important for both users and <strong>SEO</strong>. <br><br>Google’s <strong>Core Web Vitals</strong> measure page <strong>loading speed</strong>, <strong>interactivity</strong>, and <strong>stability</strong>. <br><br>Aim for quick load times (e.g. images optimized, minimal code) to improve user experience and rankings.
+          </p>
+          </div>
+          
+      
+            <p class="continue" onclick="nextSlide()">Next</p>
+            
+        </div>
+
+        <div id="five" class="page">
+          <div class="main">
+            <h3 class="subtitle on-page">Mobile-Friendliness</h3>
+
+            <p class="caption">
+               Google indexes your site based on its mobile version (<strong>mobile-first indexing</strong>). <br><br>Always use a <strong>responsive</strong> design so your site works well on phones and tablets. (Use Google’s <strong>Mobile-Friendly Test</strong> tool to check your pages.)
+          </p>
+          </div>
+          
+         
+            <p class="continue" onclick="nextSlide()">Next</p>
+            
+        </div>
+
+        <div id="six" class="page">
+          <div class="main">
+            <h3 class="subtitle">HTTPS/SSL</h3>
+            <p class="caption">
+              Secure your site with <strong>HTTPS</strong> (install an SSL certificate). Google treats <strong>HTTPS</strong> as a positive page experience signal. <br><br>A <strong>padlock icon</strong> in the URL shows users your site is secure, which builds trust.
+          </p>
+          </div>
+          
+        
+            <p class="continue" onclick="nextSlide()">Next</p>
+            
+        </div>
+
+        <div id="seven" class="page">
+          <div class="main">
+            <h3 class="subtitle">Structured data (Schema)</h3>
+            <p class="caption">
+              Optional markup in your HTML can help search engines understand your content (for example, product info or FAQs). <br><br>It can enable rich snippets in results, but be sure to implement it correctly.
+          </p>
+          </div>
+          
+           
+            <p class="continue" onclick="nextSlide()">Next</p>
+            
+        </div>
+
+        <div id="eight" class="page multiple-choice">
+          <div class="main">
+            <h3 class="subtitle">Multiple Choice</h3>
+            <div class="quiz-container">
+
+                <div class="question">Which is <strong>NOT</strong> a Technical SEO Factor?</div>
+                
+                <div class="card-options" id="quiz1">
+                    <div class="option-card" data-answer="a">
+                        <div class="option-letter">A</div>
+                        <div class="option-text">Meta description length</div>
+                    </div>
+                    
+                    <div class="option-card" data-answer="b">
+                        <div class="option-letter">B</div>
+                        <div class="option-text">Page loading speed</div>
+                    </div>
+                    <div class="option-card" data-answer="c">
+                        <div class="option-letter">C</div>
+                        <div class="option-text">Using a sitemap</div>
+                    </div>
+                    
+                    <div class="option-card" data-answer="d">
+                        <div class="option-letter">D</div>
+                        <div class="option-text">Making sure the site is mobile-friendly</div>
+                    </div>
+                </div>
+                
+                <div class="feedback" id="feedback1"></div>
+                <div class="quiz-actions">
+                    <button class="btn" onclick="checkAnswer('quiz1', 'a', 'feedback1')">Submit Answer</button>
+                    <button class="btn" onclick="resetQuiz('quiz1', 'feedback1')">Try Again</button>
+                </div>
+            </div>
+          </div>
+          
+           
+            <p class="continue" onclick="nextSlide()">Next</p>
+            
+        </div>
+
+        <div id="nine" class="page fill-in-the-blank">
+        <div class="main-fill-in-the-blank">
+          <h3 class="subtitle-fill-in-the-blank">Fill in the Blank</h3>
+          <div class="quiz-container">                
+            <h1 class="quiz-title">An ____ ____ is a File That Lists all Important Pages on Your Site, Helping Google Find and Crawl Them.</h1>
+            
+            <div class="instruction-box">
+              <span class="instruction-icon">💡</span>
+              <span class="instruction-text">Drag the correct words from below into the blanks to complete:</span>
+            </div>
+
+             <div class="sentence-container">
+              <div class="sentence">
+                <div class="drop-zone" data-position="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="drop-zone" data-position="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+              </div>
+            </div>
+
+            <div class="word-bank">
+              <div class="draggable-word" draggable="true" ondragstart="drag(event)" onclick="clickWord(this)" data-word="XML">XML</div>
+              <div class="draggable-word" draggable="true" ondragstart="drag(event)" onclick="clickWord(this)" data-word="File">File</div>
+              <div class="draggable-word" draggable="true" ondragstart="drag(event)" onclick="clickWord(this)" data-word="Page">Page</div>
+              <div class="draggable-word" draggable="true" ondragstart="drag(event)" onclick="clickWord(this)" data-word="SEO">SEO</div>
+              <div class="draggable-word" draggable="true" ondragstart="drag(event)" onclick="clickWord(this)" data-word="Sitemap">Sitemap</div>
+              <div class="draggable-word" draggable="true" ondragstart="drag(event)" onclick="clickWord(this)" data-word="Crawl">Crawl</div>
+              <div class="draggable-word" draggable="true" ondragstart="drag(event)" onclick="clickWord(this)" data-word="We">Website</div>
+            </div>
+
+            <div class="action-buttons">
+              <button class="btn btn-submit" onclick="submitAnswer()">Submit Answer</button>
+              <button class="btn btn-reset" onclick="tryAgain()">Try Again</button>
+            </div>
+
+            <div class="feedback" id="feedback"></div>
+          </div>
+        </div>
+        
+        
+          <p class="continue" onclick="nextSlide()">Next</p>
+        
+      </div>
+        
+
+        <div id="ten" class="page">
+          <div class="main">
+            <h3 class="subtitle reflection-keyword">Reflection</h3>
+            <img id="smart-phone" src="https://github.com/Duskofnight/codemate-assets/blob/main/fcvs7k7s.png?raw=true" alt="Smart Phone">
+
+
+
+
+            <p class="caption-keyword-reflection caption">
+              Use your web browser to open your site on a phone. <br>Is it easy to navigate? Are images loading quickly? <br><br>Fixing any issues here is part of <strong>technical SEO</strong>.
+
+          </p>
+          </div>
+          
+         
+            <p class="continue" onclick="nextSlide()">Next</p>
+            
+        </div>
+
+            <div id="eleven" class="page">
+          <div class="main">
+            <h3 class="subtitle">Recap</h3>
+            <ul class="caption-recap">
+            <li><strong>Technical SEO</strong> = site structure & backend that affects <strong>crawling</strong>, <strong>indexing</strong>, and <strong>performance</strong>.</li>
+            <li>Key factors: <strong>XML sitemap</strong>, <strong>robots.txt</strong>, clean site architecture.</li>
+            <li>Optimize UX: Fast-loading, mobile-friendly, secure (<strong>HTTPS</strong>).</li>
+            <li>Extras: Structured data (schema) helps search engines understand content.</li>
+          </ul>
+          </div>
+            
+          
+       
+            <p class="continue" onclick="nextSlide()">Next</p>
+            
+        </div>
+
+
+        <div id="end" class="page">
+          <div class="main">
+            <h3 class="subtitle">Lesson Completed!</h3>
+                <p class= "caption">Great work on completing this lesson. Next, we will dive into the realm of Off-Page SEO!</p>
+          </div>
+            
+          
+            
+            <a href="intro-to-seo.html" class="continue" onclick="nextSlide()">Next</a>
+            
+        </div>
+      </div>
+
+      <script src="technical-seo.js"></script>
+
+  </body>
+  </html>

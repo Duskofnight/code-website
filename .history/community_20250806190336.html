@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Hub | Codemate: Learn Programming for Free</title>
+  <link rel="stylesheet" href="community-styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    
+
+    <header class="header">
+    
+    <div class="landing-page-container-codemate-logo">
+      <a href="home-page.html" class="logo-link">
+        <img src="https://raw.githubusercontent.com/Duskofnight/codemate-assets/refs/heads/main/codemate-nologo-transparent-red.png" class="landing-page-codemate-logo" alt="Codemate Logo">
+        <h2>codemate</h2>
+      </a>  
+    </div>
+
+    <nav class="navbar">
+      <a href="courses-page.html" class="nav-link">Courses</a>
+      <a href="community.html" class="nav-link">Community</a>
+      <a href="blogs-page.html" class="nav-link">Blogs</a>
+      <a href="code-compilers.html" class="nav-link">Code Compilers</a>
+      <a href="donate.html" class="nav-link">Donate</a>
+    </nav>
+   
+    <div class="header-profile">
+        <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg" class="header-profile-pic" id="header-profile-pic">
+        <div class="dropdown" id="dropdownMenu">
+      
+        <a href="#"><i class="fas fa-user"></i>Profile</a>
+        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+        <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+        <a onclick="logout()"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+      </div>
+    </div>
+    
+    <div class="topnav">
+      <div id="myLinks">
+        <a href="courses-page.html" class="nav-link"><h4>Courses</h4></a>
+        <a href="community.html" class="nav-link"><h4>Community</h4></a>
+        <a href="blogs-page.html" class="nav-link"><h4>Blogs</h4></a>
+        <a href="code-compilers" class="nav-link"><h4>Code Compilers</h4></a>
+        <a href="account" class="nav-link"><h4>Account</h4></a>
+      </div>
+      <div class="menu-icon" onclick="myFunction()">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+      </div>
+    </div>
+    
+  </header>
+
+
+
+  <section class="discussion-page">
+
+  <div class="discussion-page-header" id="page-section">
+      <h1 class="discussion-page-heading">Community Hub</h1>
+      <p class="discussion-page-subtitle">Join the conversation, share ideas, and explore amazing content</p>
+  </div>
+
+  <div class="discuss-tabs" id="page-section">
+      <button class="nav-tab active" onclick="showSection('discussion')">Discussions</button>
+      <button class="nav-tab" onclick="showSection('create')">Create Discussion</button>
+  </div>
+
+
+
+
+
+
+  <div id="discussion" class="content-section active">
+
+  
+    <div class="search-filters">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search discussions by keyword...">
+      <select class="category-filter" id="categoryFilter">
+        <option value="">All Categories</option>
+        <option value="Coding Help">Coding Help</option>
+        <option value="Resource Request">Resource Request</option>
+        <option value="Feedback & Suggestions">Feedback & Suggestions</option>
+        <option value="Career & Learning">Career & Learning</option>
+        <option value="General Discussion">General Discussion</option>
+      </select>
+    </div>
+
+    <div class="discussion-list">
+
+    <!-- Replace your existing discussion items with these (add data-id attributes) -->
+
+<div class="discussion-item" data-id="1">
+  <div class="discussion-header">
+    <div class="discussion-title">
+      <h3 onclick="openDiscussion(1)" class="clickable-title">How do you stay focused while coding?</h3>
+      <div class="discussion-meta">
+        <span>👤 Victor Phan</span>
+        <span>📅 2 hours ago</span>
+        <span class="discussion-category">General Discussion</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="discussion-preview">
+    Do you guys have any tips to staying focused while coding? I always tend to just lose track of where I am or get distracted by my phone. It's really affecting my productivity and I'm starting to feel frustrated about it.
+  </div>
+
+  <div class="discussion-actions">
+  <button class="expand-btn">View Responses (2)</button>
+  <div class="discussion-stats">
+    <button class="like-btn">🤍 69</button>
+    <span>💬 2 responses</span>
+  </div>
+</div>
+
+  <div class="expanded-content">
+    <div class="response">
+      <div class="response-header">
+        <span class="response-author">Alex Phan</span>
+        <span class="response-time">1 hour ago</span>
+      </div>
+      <p>I use the Pomodoro technique - 25 minutes of focused coding, then a 5-minute break. It really helps maintain concentration! I also keep my phone in another room during coding sessions.</p>
+    </div>
+    <div class="response">
+      <div class="response-header">
+        <span class="response-author">Justin Phan</span>
+        <span class="response-time">45 minutes ago</span>
+      </div>
+      <p>Try putting your phone in another room or using apps that block distracting websites during coding sessions. I use Focus and it's been a game changer for my productivity.</p>
+    </div>
+  </div>
+</div>
+
+<div class="discussion-item" data-id="2">
+  <div class="discussion-header">
+    <div class="discussion-title">
+      <h3 onclick="openDiscussion(2)" class="clickable-title">Best resources for learning React?</h3>
+      <div class="discussion-meta">
+        <span>👤 Sarah Chen</span>
+        <span>📅 5 hours ago</span>
+        <span class="discussion-category">Resource Request</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="discussion-preview">
+    I'm new to React and looking for comprehensive learning materials. What are your favorite tutorials, books, or courses? I have some JavaScript experience but I'm completely new to React and modern frontend development. I learn best with hands-on projects and clear explanations.
+  </div>
+
+  <div class="discussion-actions">
+    <button class="expand-btn">View Responses (1)</button>
+    <div class="discussion-stats">
+      <button class="like-btn">🤍 18</button>
+      <span>💬 1 response</span>
+    </div>
+  </div>
+
+  <div class="expanded-content">
+    <div class="response">
+      <div class="response-header">
+        <span class="response-author">David Park</span>
+        <span class="response-time">3 hours ago</span>
+      </div>
+      <p>The official React documentation is excellent. Also check out React Beta docs for the latest patterns with hooks. I'd also recommend building a few small projects to practice.</p>
+    </div>
+  </div>
+</div>
+
+<div class="discussion-item" data-id="3">
+  <div class="discussion-header">
+    <div class="discussion-title">
+      <h3 onclick="openDiscussion(3)" class="clickable-title">Code review feedback - feeling discouraged</h3>
+      <div class="discussion-meta">
+        <span>👤 Mike Johnson</span>
+        <span>📅 1 day ago</span>
+        <span class="discussion-category">Career & Learning</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="discussion-preview">
+    I submitted my first code review at work and got a lot of feedback. I'm feeling a bit overwhelmed and discouraged. How do you handle constructive criticism? The feedback was all valid, but it feels like I have so much to learn and I'm worried I'm not cut out for this. Has anyone else felt this way when starting out?
+  </div>
+
+  <div class="discussion-actions">
+    <button class="expand-btn">View Responses (1)</button>
+    <div class="discussion-stats">
+      <button class="like-btn">🤍 45</button>
+      <span>💬 1 responses</span>
+    </div>
+  </div>
+
+  <div class="expanded-content">
+    <div class="response">
+      <div class="response-header">
+        <span class="response-author">David Park</span>
+        <span class="response-time">3 hours ago</span>
+      </div>
+      <p>Remember, it is essential for everyone to get feedback on their work! Please accept the criticism and don't take it personally, but actually try to listen and do what others have to say. Criticism is needed to learn and grow, and feeling like this is normal! You will eventually learn the basics of things and feel much more confident. Hang in there! </p>
+    </div>
+  </div>
+</div>
+
+  <div class="expanded-content">
+    <p style="color: #666; text-align: center; padding: 1rem;">No responses yet. Be the first to respond!</p>
+  </div>
+</div>
+</div>
+
+</div>
+
+<div id="discussion-detail" class="content-section">
+  <div class="discussion-detail-content">
+    <button class="back-btn">← Back to Discussions</button>
+    
+    <div class="discussion-detail-header">
+      <h2 id="detail-title">Discussion Title</h2>
+      <div class="discussion-meta">
+        <span id="detail-author">👤 Author</span>
+        <span id="detail-time">📅 Time</span>
+        <span id="detail-category" class="discussion-category">Category</span>
+      </div>
+    </div>
+    
+    <div class="discussion-detail-body">
+      <p id="detail-content">Discussion content will appear here...</p>
+    </div>
+    
+    <div class="discussion-detail-actions">
+      <button id="detail-like-btn" class="like-btn">🤍 0</button>
+    </div>
+    
+    <div class="responses-section">
+      <h2>Responses</h2>
+      <div id="responses-list">
+      </div>
+      
+      <div class="reply-form">
+        <h3>Add Your Response</h3>
+        <textarea 
+          id="reply-textarea" 
+          class="reply-textarea" 
+          placeholder="Share your thoughts, experiences, or advice..."
+          rows="5"
+        ></textarea>
+        <button id="submit-reply" class="reply-btn">Submit Response</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+  
+
+
+  <div id="create" class="content-section">
+    <h2 class="discuss-heading">Start a New Discussion</h2>
+
+  <form class="discuss-form">
+    <div id="page-section">
+      <label for="question">Discussion Title</label>
+      <input id="question" name="question" type="text" maxlength="128" autocomplete="off" placeholder="What would you like to discuss?" />
+    </div>
+    <div id="page-section">
+      <label for="category">Category</label>
+      <select id="category">
+        <option value="">Select a Category</option>
+        <option value="Coding Help">Coding Help</option>
+        <option value="Resource Request">Resource Request</option>
+        <option value="Feedback & Suggestions">Feedback & Suggestions</option>
+        <option value="Career & Learning">Career & Learning</option>
+        <option value="General Discussion">General Discussion</option>
+      </select>
+    </div>
+    <div id="page-section">
+      <label for="explain">Explain</label>
+      <textarea id="explain" name="explain"
+        maxlength="2048" rows="5"
+        autocomplete="off"
+        placeholder="Give more details or context about your question or discussion topic here..."></textarea>
+    </div>
+    <div>
+      <button type="submit" class="button">Create Discussion</button>
+    </div>
+  </form>
+
+  </div>
+  </div>
+
+  
+
+
+
+  </section>
+  
+
+
+  <div id="notification" class="notification hidden">
+    <span id="notification-message"></span>
+    <button id="close-notification" aria-label="Close notification">&times;</button>
+  </div>
+
+  
+
+
+  <script src="community-script.js"></script>
+  </body>
+
+  </html>

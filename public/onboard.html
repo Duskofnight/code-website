@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeMate</title>
+  <link rel="stylesheet" href="onboard-styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="background-squares">
+    <div class="square square1"></div>
+    <div class="square square2"></div>
+    <div class="square square3"></div>
+    <div class="square square4"></div>
+  </div>
+
+  <div class="slides-container">
+    <div class="question-section">
+        <div class="slide active" id="slide1">
+            <h1>Welcome to Codemate, <span id="username">{username}</span>!</h1>
+            <h3>Let's turn your curiosity into real, hands-on coding skills, with the help of AI and bring your ideas to life.</h3>
+            
+            <button onclick="goToSlide(2)">Start Exploring</button>
+        </div>
+        <div class="slide" id="slide2">
+            <h2>Learn the ways developers actually learn</h2>
+            <h3>Codemate uses AI to generate hands-on projects and quizzes that reflect real-world coding.</h3>
+            <img src="https://raw.githubusercontent.com/Duskofnight/codemate-assets/f07974a4e8fb4a3ea322ddc36d0adcf5a10f2001/undraw_dev-environment_n5by.svg">
+            <img src="https://raw.githubusercontent.com/Duskofnight/codemate-assets/f07974a4e8fb4a3ea322ddc36d0adcf5a10f2001/undraw_correct-answer_vjt7.svg">
+            <button onclick="goToSlide(3)">Next</button>
+        </div>
+        <div class="slide" id="slide3">
+            <h2>Learn your Way</h2>
+            <h3>Codemate adapts to your schedule and skill level. We'll help you stay on track with challenges that grow with you.</h3>
+            <img src="https://raw.githubusercontent.com/Duskofnight/codemate-assets/ffa86f6087a0e9f37d26dd04b8bc8dccf9f19d0f/undraw_read-notes_7itt%20(1).svg">
+            <img src="https://raw.githubusercontent.com/Duskofnight/codemate-assets/816b0144e1c7e8be9affd89ac6193747b065fd83/undraw_books_wxzz%20(1).svg">
+            <button onclick="goToSlide(4)">Continue</button>
+        </div>
+        <div class="slide" id="slide4">
+            <h2>Certificates and Achievements</h2>
+            <h3>Earn verified certificates, track your progress, and progress through your coding journey with real skills - all for free!</h3>
+            <img src="https://raw.githubusercontent.com/Duskofnight/codemate-assets/816b0144e1c7e8be9affd89ac6193747b065fd83/undraw_idea_hz8b.svg">
+            <button onclick="goToSlide(5)">Find my Course</button>
+        </div>
+    </div>
+
+    <div class="course-section">
+        <div class="slide" id="slide5">
+            <h2>How much coding experience do you have?</h2>
+            <button onclick="goToSlide(6)">I've never coded before</button>
+            <button onclick="goToSlide(6)">I have some knowledge</button>
+            <button onclick="goToSlide(6)">I have a lot of experience</button>
+        </div>
+
+        <div class="slide" id="slide6">
+            <h2>What is your daily learning goal?</h2>
+            <button onclick="goToSlide(7)">Casual - 10 minutes a day</button>
+            <button onclick="goToSlide(7)">Regular - 15 minutes a day</button>
+            <button onclick="goToSlide(7)">Intense - 20 minutes a day</button>
+        </div>
+
+        <div class="slide" id="slide7">
+            <h2>What do you want to focus on?</h2>
+            <button onclick="goToSlide(8)">Web Development</button>
+            <button onclick="goToSlide(8)">Data Science</button>
+            <button onclick="goToSlide(8)">AI & Machine Learning</button>
+        </div>
+
+        <div class="slide" id="slide8">
+            <h2>Pick your Course Selection!</h2>
+        </div>
+    </div>
+  </div>
+
+<script src="onboard-script.js" defer></script>
+
+
+
+</body>
+</html>

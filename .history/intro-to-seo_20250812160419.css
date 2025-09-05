@@ -1,0 +1,472 @@
+:root {
+  --primary: #F9F9FA;
+  --accent: #f53333;
+  --text: #1E1E2F;
+  --secondary: #2C2C3E;
+}
+
+
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f1f5f9;
+  color: var(--text);
+
+}
+
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-secondary);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;  
+  height: 90px;
+}
+
+.landing-page-container-codemate-logo a {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  pointer-events: none;
+}
+
+.landing-page-container-codemate-logo a img,
+.landing-page-container-codemate-logo a h2 {
+  pointer-events: auto; 
+}
+
+.landing-page-container-codemate-logo,
+.navbar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+
+.landing-page-codemate-logo {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  margin-left: 6.5em;
+  position: relative;
+  bottom: 0.8rem;
+  margin-right: -1rem;
+}
+
+
+
+.landing-page-container-codemate-logo h2 {
+  font-size: 1.6rem;
+  margin: 0;
+  position: static;
+  white-space: nowrap;
+  color: var(--text-primary)
+}
+
+.navbar {
+  gap: 2rem;
+  flex-wrap: wrap;
+  color: var(--text-primary)
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link:hover, .header .login-button:hover {
+  color: var(--accent);
+}
+
+.header-profile {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-profile-pic {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: block;
+  border: 2px solid var(--accent-primary);
+  box-shadow: var(--shadow-primary);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+
+.dropdown {
+  position: absolute;
+  top: 80px;
+  right: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  width: 220px;
+  display: none;
+  z-index: 999;
+  padding: 0.8rem 0.5rem;
+}
+
+.dropdown.show {
+  display: block;
+}
+
+
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.dropdown a:hover {
+  background: #f0f0f0;
+}
+
+.dropdown a i {
+  margin-right: 10px;
+  color: #666;
+}
+
+
+.topnav { 
+  display: none;
+  cursor: pointer;
+}
+
+.intro-title {
+  font-size: 28.5px;
+}
+
+.lesson-head {
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 10rem;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  max-width: 32.5%;
+
+  line-height: 1.5;
+}
+
+.lesson-head-description {
+  color: #1E1E2F;
+}
+
+.fundamentals {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 32.5%;
+  padding: 13px;
+}
+
+.practice {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    max-width: 600px;
+    padding: 5px;
+    padding-left: 10px;
+    text-align: left;
+    border-radius: 12px;
+}
+
+.on-site {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 32.5%;
+  padding: 13px;
+}
+
+.off-site {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 32.5%;
+  padding: 13px;
+}
+
+.optimization {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 32.5%;
+  padding: 13px;
+}
+
+.quiz, .test, .lesson {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 2px solid black;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  max-width: 600px;
+  padding: 5px;
+  padding-left: 10px;
+  text-align: left;
+  border-radius: 12px;
+}
+
+
+.lesson:hover {
+    cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1070px) and (min-width: 500px) {
+  .navbar,
+  .buttons {
+    display: none;
+  }
+
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+  }
+
+
+
+
+  #myLinks {
+    display: flex;
+    position: fixed;
+    top: 99px;
+    left: 0;
+    background-color: var(--primary);
+    width: 100vw;
+    height: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 999;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    border-top: 1px solid white;
+    transition: height 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    pointer-events: none;
+  }
+
+
+
+  #myLinks a {
+    display: block;
+    padding-left: 10px;
+    color: var(--text);
+    text-decoration: none;
+    text-align: left;
+    font-size: 1.75rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+
+
+#myLinks.show {
+
+  height: calc(100vh - 60px);
+
+  pointer-events: auto;
+}
+
+
+#myLinks.show a {
+
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.menu-icon {
+  width: 30px;
+  height: 22px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  margin-right: 30px;
+  margin: 10px 30px 0 0;
+}
+
+.menu-icon span {
+  background-color: white;
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.menu-icon .bar1 {
+  top: 0;
+}
+
+.menu-icon .bar2 {
+  top: 9px;
+}
+
+.menu-icon .bar3 {
+  top: 18px;
+}
+
+.menu-icon.active .bar1 {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.menu-icon.active .bar2 {
+  opacity: 0;
+}
+
+.menu-icon.active .bar3 {
+  transform: rotate(-45deg);
+  top: 9px;
+}
+
+#myLinks.show a:nth-child(1) { transition-delay: 0.1s; }
+#myLinks.show a:nth-child(2) { transition-delay: 0.2s; }
+#myLinks.show a:nth-child(3) { transition-delay: 0.3s; }
+
+
+
+ 
+
+  #myLinks > :first-child {
+    padding-top: 0.5rem;
+  }
+
+  #myLinks > :last-child {
+    padding-top: 4rem;
+  }
+
+  .landing-page-codemate-logo {
+    margin-left: 1em;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .hero-code-left {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .hero-full-text, .signup-container {
+    margin: 0 0.1rem;
+  }
+
+  
+
+}
+
+@media (max-width: 500px) {
+  .navbar,
+  .buttons {
+    display: none;
+  }
+
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  #myLinks {
+    display: flex;
+    position: fixed;
+    top: 99px;
+    left: 0;
+    background-color: var(--primary);
+    width: 100vw;
+    height: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 999;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    border-top: 1px solid white;
+    transition: height 0.4s ease;
+    }
+    .lesson {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        }
+
+    .lesson-head {
+        max-height: 19rem;
+        max-width: 100%;
+        padding: 1rem;
+        padding-top: 0.5rem;
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        
+        }
+    }

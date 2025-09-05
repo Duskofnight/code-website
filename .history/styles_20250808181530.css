@@ -1,0 +1,366 @@
+:root {
+  --primary: #1E1E2F;
+  --accent: #E04A4A;
+  --text: #FFFFFF;
+  
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--primary);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-container {
+  position: relative;
+  background-color: var(--secondary);
+  padding: 0rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  pointer-events: auto;
+  width: fit-content;
+  margin: 0 auto;
+  display: inline-flex;
+  align-items: center;
+ 
+
+  display: inline-flex;        /* keeps click area tight */
+  align-items: flex-start;     /* lets us control vertical alignment */
+                  /* adjust space between image and text */
+  text-decoration: none;
+  color: inherit;
+}
+
+.auth-container-codemate-logo {
+  position: relative;
+  max-width: 150px;
+  height: auto;
+ 
+  z-index: 10;
+ 
+}
+
+.logo-link h2 {
+
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  transform: translateY(4.5rem);
+
+}
+
+
+.auth-container.login h1, .auth-container.signup h1 {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  font-size: 2.5rem;
+}
+
+.auth-container.signup h1 {
+  margin-bottom: 2.5rem;
+}
+
+.auth-container.forgot-password h1 {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  font-size: 2rem;
+}
+
+.auth-container label {
+  display: block;
+  padding-bottom: 0.6rem; 
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #2C2C3E;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding: 0.75rem;
+  padding-right: 44px; 
+  border: none;
+  border-radius: 8px;
+  background-color: #2C2C3E;
+  color: var(--text);
+  font-size: 1rem;
+  height: 44px; 
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  bottom: 31px;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.error-message {
+  color: #E04A4A; 
+  font-size: 0.9rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+input.invalid {
+  border: 1px solid #E04A4A;
+}
+
+
+body::before,
+body::after {
+  content: none; 
+}
+
+.auth-container {
+  position: relative;
+  z-index: 10;
+}
+
+.background-squares {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.background-squares .square {
+  position: absolute;
+  border-radius: 6px;
+  box-shadow: 0 0 15px 5px;
+  opacity: 0.15;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+.background-squares .square1 {
+  width: 40px;
+  height: 40px;
+  background-color: var(--accent);
+  box-shadow: 0 0 20px 8px var(--accent);
+  top: 10%;
+  left: 15%;
+  animation-name: pulseMove1;
+  animation-duration: 6s;
+}
+
+.background-squares .square2 {
+  width: 25px;
+  height: 25px;
+  background-color: var(--text);
+  box-shadow: 0 0 18px 6px var(--text);
+  top: 60%;
+  left: 15%;
+  animation-name: pulseMove2;
+  animation-duration: 8s;
+}
+
+.background-squares .square3 {
+  width: 30px;
+  height: 30px;
+  background-color: var(--accent);
+  box-shadow: 0 0 22px 7px var(--accent);
+  top: 80%;
+  left: 70%;
+  animation-name: pulseMove3;
+  animation-duration: 7s;
+}
+
+.background-squares .square4 {
+  width: 35px;
+  height: 35px;
+  background-color: var(--text);
+  box-shadow: 0 0 20px 6px var(--text);
+  top: 20%;
+  left: 75%;
+  animation-name: pulseMove4;
+  animation-duration: 5s;
+}
+
+
+@keyframes pulseMove1 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translate(15px, -10px) scale(1.1);
+    opacity: 0.25;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+}
+
+@keyframes pulseMove2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translate(-10px, 10px) scale(1.15);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+}
+
+@keyframes pulseMove3 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translate(20px, 5px) scale(1.1);
+    opacity: 0.28;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+}
+
+@keyframes pulseMove4 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translate(-15px, -15px) scale(1.12);
+    opacity: 0.27;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+}
+
+.signup-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px auto;
+  margin-bottom: 30px;
+}
+
+.google-button,
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px 12px; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px; 
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  flex: 1; 
+  min-width: 0; 
+}
+
+.google-button {
+  color: #374151;
+}
+
+.github-button {
+  color: #24292f;
+}
+
+.auth-container button {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+  padding: 0.90rem;
+  background-color: var(--accent);
+  color: var(--text);
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-container button:hover {
+  background-color: #C84040;
+}
+
+.auth-container .alt,
+.auth-container .forgot-password,
+.auth-container .back-to-login {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.auth-container .alt a,
+.auth-container .forgot-password a,
+.auth-container .back-to-login a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.auth-container .alt a:hover,
+.auth-container .forgot-password a:hover,
+.auth-container .back-to-login a:hover {
+  text-decoration: underline;
+}
+
